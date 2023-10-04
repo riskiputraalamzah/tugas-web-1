@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Biodata Diri</title>
+    <style>
+        .content {
+            background-color: #eee;
+            width: 50vh;
+            position: absolute;
+            left: 50%;
+            top: 50%;
+            transform: translate(-50%, -50%);
+            padding: 15px 20px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px;
+        }
+
+        .title {
+            text-align: center;
+            font-size: 36px;
+            font-weight: bold;
+            margin-bottom: 30px;
+        }
+
+        .row {
+            display: flex;
+            justify-content: space-between;
+            margin-bottom: 20px;
+            align-items: center;
+        }
+
+
+        .sosmed {
+            position: relative;
+            padding: 20px;
+            text-align: center;
+            color: #656565;
+        }
+
+        .sosmed span {
+            background: #eee;
+            padding: 0 5px;
+
+        }
+
+        .sosmed hr {
+            position: absolute;
+            left: 0;
+            top: 40%;
+            right: 0;
+            z-index: -1;
+
+        }
+
+        .row.sosmed {
+            justify-content: space-evenly;
+            margin-bottom: 0;
+        }
+
+        .row img {
+            width: 50px;
+        }
+
+        .row .col:last-child {
+            max-width: 50%;
+            text-align: right;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="content">
+        <div class="title">Biodata Diri</div>
+        <div class="row">
+            <div class="col">Nama</div>
+            <div class="col">Riski Putra Alamzah</div>
+        </div>
+        <div class="row">
+            <div class="col">TTL</div>
+            <div class="col">13 September 2002</div>
+        </div>
+        <div class="row">
+            <div class="col">Jenis Kelamin</div>
+            <div class="col">Laki-Laki</div>
+        </div>
+        <div class="row">
+            <div class="col">Agama</div>
+            <div class="col">Islam</div>
+        </div>
+        <div class="row">
+            <div class="col">Pendidikan</div>
+            <div class="col">S1 Informatika</div>
+        </div>
+        <div class="row">
+            <div class="col">Alamat</div>
+            <div class="col">Jalan Kertanegara No 10A Gedangan Sidoarjo</div>
+        </div>
+        <div class="row">
+            <div class="col">Telepon</div>
+            <div class="col">082233361877</div>
+        </div>
+        <div class="row">
+            <div class="col">Pendidikan</div>
+            <div class="col">
+                <ul style="text-align: left;">
+                    <li>SDN Sawotratap 1</li>
+                    <li>SMPN 4 Waru</li>
+                    <li>SMKS Antartika 1</li>
+                    <li>UMSIDA S1 Informatika</li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="sosmed">
+            <hr>
+            <span>My Social Media</span>
+        </div>
+        <div class="row sosmed">
+            <img src="./img/logo-wa-whatsapp.png" alt="">
+            <img src="./img/pngtree-instagram-icon-instagram-logo-png-image_3584852.png" alt="">
+            <img src="./img/linkedin.webp" alt="">
+        </div>
+    </div>
+</body>
+<script>
+    const sosmed = document.querySelectorAll('.sosmed img')
+    sosmed.forEach(e => {
+        e.addEventListener('click', function () {
+            window.open('https://google.com', '_blank')
+        })
+    })
+</script>
+
+</html>
